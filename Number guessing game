@@ -1,0 +1,13 @@
+# Number guessing game
+import random
+RandomNumber = random.randrange(1, 200)
+userInput = int(input('Guess The Number: '))
+if userInput > RandomNumber:
+    print(RandomNumber)
+    print('The Number is Too High. Please try again')
+elif RandomNumber > userInput:
+    print(RandomNumber)
+    print('The Number is too Low. Please try again')
+else:
+    print(RandomNumber)
+    print('Congratulations Bro! You did this!')
